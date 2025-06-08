@@ -82,7 +82,7 @@ python app.py
 ⚠️ **Make sure KoboldCpp is running at:**
 http://localhost:5001/v1/chat/completions
 
-**Frontend will be available at:**
+✅ **Frontend will be available at:**
 http://localhost:8000  
 
 
