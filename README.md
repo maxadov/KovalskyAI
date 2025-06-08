@@ -6,7 +6,7 @@ Just you and your model — on your own terms.
 
 ---
 
-![Demo](https://imgur.com/a/4BO3zJU)
+![Demo](https://i.imgur.com/HECHphb.gif)
 
 ## ✨ Features
 
