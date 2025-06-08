@@ -47,7 +47,30 @@ Here's what we're working on next:
 KovalskyAI uses:
 
 - **Backend**: Python `Flask`, `requests`, and a KoboldCpp-compatible API  
-- **Frontend**: Pure `HTML`, `CSS`, `JavaScript` + `GSAP` for animations  
+- **Frontend**: Pure `HTML`, `CSS`, `JavaScript` + `GSAP` for animations
+
+### ⚙️ Model & Backend Setup
+1. 📥 **Download KoboldCpp**
+Download the latest `KoboldCpp` build from [Releases](https://github.com/LostRuins/koboldcpp/releases)
+Use the version with `cu12` in the name if you have an `NVIDIA GPU with CUDA 12`.  
+
+2. 🤖 **Download the Model**
+Get the model file `qwen1_5-7b-chat-q4_k_m.gguf` from Hugging Face.
+Choose `q4_k_m` format for a good balance of performance and quality.
+_Place the `.gguf` model file in the same folder as `koboldcpp_cu12.exe.`_  
+
+
+3. 🚀 **Launch KoboldCpp**
+Start the local API with the following command:
+```bash
+.\koboldcpp_cu12.exe ^
+  --model .\qwen1_5-7b-chat-q4_k_m.gguf ^
+  --usecublas ^
+  --gpulayers 33 ^
+  --threads 8 ^
+  --port 5001
+```
+_Adjust `--gpulayers` and `--threads` based on your hardware._
 
 ### Clone the project
 
