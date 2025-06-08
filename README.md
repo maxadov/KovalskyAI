@@ -67,18 +67,6 @@ Make sure KoboldCpp is running at http://localhost:5001/v1/chat/completions.
 Frontend is served at: `http://localhost:8000`
 
 
-📂 Folder Structure
-KovalskyAI/
-├── app.py              
-├── templates/
-│   └── index.html   
-├── static/
-│   ├── style.css           
-│   └── script.js       
-├── requirements.txt
-└── README.md
-
-
 🤝 Contributing
 Contributions are warmly welcome! 🔧
 If you’d like to suggest a feature, fix a bug, or improve anything:
