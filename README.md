@@ -80,6 +80,4 @@ If you’d like to suggest a feature, fix a bug, or improve anything:
 Let’s build something awesome together.  
 
 
-
-
-Made with ❤️ and local compute.
+`Made with ❤️ and local compute.`
