@@ -54,12 +54,12 @@ git clone https://github.com/maxadov/KovalskyAI.git
 cd KovalskyAI
 ```
 
-#Create a virtual environment
+Create a virtual environment
 ```bash
 python -m venv venv
 ```
 
-#Activate it
+Activate it
 Linux/macOS:
 ```bash
 source venv/bin/activate
@@ -70,25 +70,25 @@ venv\Scripts\activate
 ```
 
 
-#Install dependencies
+Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-#Start the server
+Start the server
 ```bash
 python app.py
 ```
-⚠️ Make sure KoboldCpp is running at:
+⚠️ **Make sure KoboldCpp is running at:**
 http://localhost:5001/v1/chat/completions
 
-Frontend will be available at:
+**Frontend will be available at:**
 http://localhost:8000  
 
 
-🤝 # Contributing
+# 🤝Contributing
 Contributions are warmly welcome! 🔧
-If you’d like to suggest a feature, fix a bug, or improve anything:
+If you’d like to suggest **a feature, fix a bug, or improve** anything:
 
 1. Create an issue with details
 
