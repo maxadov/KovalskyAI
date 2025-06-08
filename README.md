@@ -77,7 +77,9 @@ If you’d like to suggest a feature, fix a bug, or improve anything:
 
 3. Open a pull request when ready
 
-Let’s build something awesome together.
+Let’s build something awesome together.  
+
+
 
 
 Made with ❤️ and local compute.
