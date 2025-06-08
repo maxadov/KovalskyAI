@@ -6,6 +6,8 @@ Just you and your model — on your own terms.
 
 ---
 
+![Demo](https://imgur.com/a/4BO3zJU)
+
 ## ✨ Features
 
 - ⚡ **Real-time streaming responses** (like ChatGPT)  
