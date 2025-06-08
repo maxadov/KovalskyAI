@@ -52,3 +52,43 @@ KovalskyAI uses:
 ```bash
 git clone https://github.com/maxadov/KovalskyAI.git
 cd KovalskyAI
+
+#Create a virtual environment
+```bash
+python -m venv venv
+
+#Activate it
+Linux/macOS:
+```bash
+source venv/bin/activate  
+Windows:
+```bash
+venv\Scripts\activate
+
+
+#Install dependencies
+```bash
+pip install -r requirements.txt
+
+#Start the server
+```bash
+python app.py  
+⚠️ Make sure KoboldCpp is running at:
+http://localhost:5001/v1/chat/completions
+
+Frontend will be available at:
+http://localhost:8000  
+
+
+🤝 # Contributing
+Contributions are warmly welcome! 🔧
+If you’d like to suggest a feature, fix a bug, or improve anything:
+
+1. Create an issue with details
+
+2. Fork the repo
+
+3. Open a pull request when ready  
+
+`Made with ❤️ and local compute.`
+
