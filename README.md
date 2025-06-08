@@ -53,14 +53,14 @@ Frontend: Pure HTML, CSS, JavaScript, with GSAP for animations
 `cd KovalskyAI`
 
 # Create virtual environment
-python -m venv venv
-source venv/bin/activate   # On Windows: venv\Scripts\activate
+`python -m venv venv`  
+`source venv/bin/activate`    `On Windows: venv\Scripts\activate`
 
 # Install dependencies
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 # Start the server
-python app.py
+`python app.py`
 
 Make sure KoboldCpp is running at http://localhost:5001/v1/chat/completions.
 
