@@ -87,7 +87,8 @@ http://localhost:8000
 
 
 # 🤝Contributing
-Contributions are warmly welcome!  
+**Contributions are warmly welcome!  **
+
 🔧If you’d like to suggest **a feature, fix a bug, or improve** anything:
 
 1. Create an issue with details
