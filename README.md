@@ -49,18 +49,18 @@ Backend: Python Flask, requests, KoboldCpp-compatible API
 Frontend: Pure HTML, CSS, JavaScript, with GSAP for animations
 
 # Clone the project
-`git clone https://github.com/maxadov/KovalskyAI.git`  
-`cd KovalskyAI`
+```git clone https://github.com/maxadov/KovalskyAI.git```  
+```cd KovalskyAI```
 
 # Create virtual environment
-`python -m venv venv`  
-`source venv/bin/activate`    `On Windows: venv\Scripts\activate`
+```python -m venv venv```  
+```source venv/bin/activate```    ```On Windows: venv\Scripts\activate```
 
 # Install dependencies
-`pip install -r requirements.txt`
+```pip install -r requirements.txt```
 
 # Start the server
-`python app.py`
+```python app.py```
 
 Make sure KoboldCpp is running at http://localhost:5001/v1/chat/completions.
 
