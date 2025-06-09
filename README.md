@@ -63,14 +63,10 @@ _Place the `.gguf` model file in the same folder as `koboldcpp_cu12.exe.`_
 3. 🚀 **Launch KoboldCpp**
 Start the local API with the following command:
 ```bash
-.\koboldcpp_cu12.exe ^
-  --model .\qwen1_5-7b-chat-q4_k_m.gguf ^
-  --usecublas ^
-  --gpulayers 33 ^
-  --threads 8 ^
-  --port 5001
+koboldcpp_cu12.exe --model ./YOUR_MODEL_NAME.gguf --usecublas --gpulayers 33 --threads 8 --port 5001
 ```
 _Adjust `--gpulayers` and `--threads` based on your hardware._
+_Make sure you are in the same directory as `koboldcpp_cu12.exe`_
 
 ### Clone the project
 
