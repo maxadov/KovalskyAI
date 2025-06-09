@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Back to Top Demo</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 2rem;
+      height: 2000px; /* For scroll */
+    }
+
+    #backToTopBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      display: none;
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    #backToTopBtn:focus {
+      outline: 2px solid #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Scroll Down to See the Button</h1>
+  <p>...</p> <!-- Lots of content to enable scrolling -->
+
+  <button id="backToTopBtn" aria-label="Scroll to top">↑ Top</button>
+
+  <script>
+    const btn = document.getElementById('backToTopBtn');
+
+    window.addEventListener('scroll', () => {
+      btn.style.display = window.scrollY > 300 ? 'block' : 'none';
+    });
+
+    btn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+
+</body>
+</html>
