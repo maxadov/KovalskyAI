@@ -8,7 +8,6 @@ gsap.registerPlugin(ScrollTrigger)
 // Initialize animations when DOM is loaded
 document.addEventListener("DOMContentLoaded", () => {
   initAnimations()
-  initChatDemo()
   initSmoothScrolling()
   initBackgroundAnimation()
 })
