@@ -1,8 +1,10 @@
 # 🧠 KovalskyAI — Your Local AI Assistant
 
-KovalskyAI is a **fully self-hosted**, blazing-fast AI chat interface built for privacy, speed, and simplicity.  
-No external APIs. No cloud. No monthly fees.  
+KovalskyAI is a **fully self-hosted**, blazing-fast AI chat interface built for privacy, speed, and simplicity.
+No external APIs. No cloud. No monthly fees.
 Just you and your model — on your own terms.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE.txt)
 
 ## 🌐 Project Landing Page
 
@@ -17,22 +19,22 @@ Visit the project landing page hosted on GitHub Pages:
 
 ## ✨ Features
 
-- ⚡ **Real-time streaming responses** (like ChatGPT)  
-- 🎨 **Minimalist, dark-themed interface** with elegant animations (GSAP-powered)  
-- 🧱 **Self-hosted** backend — works offline, no dependencies on OpenAI or others  
-- 🖥️ **Cross-platform**: Runs smoothly on both laptops and desktops  
-- 🔁 **CPU & GPU** support — CUDA-accelerated via `koboldcpp`  
-- 💬 **Memory-aware chat history** (retains previous conversation context)  
-- 🛡️ **CORS enabled** — ready for frontend/backend interaction  
-- 🌐 Clean separation between backend (Flask + Kobold API) and frontend (HTML/CSS/JS)  
+- ⚡ **Real-time streaming responses** (like ChatGPT)
+- 🎨 **Minimalist, dark-themed interface** with elegant animations (GSAP-powered)
+- 🧱 **Self-hosted** backend — works offline, no dependencies on OpenAI or others
+- 🖥️ **Cross-platform**: Runs smoothly on both laptops and desktops
+- 🔁 **CPU & GPU** support — CUDA-accelerated via `koboldcpp`
+- 💬 **Memory-aware chat history** (retains previous conversation context)
+- 🛡️ **CORS enabled** — ready for frontend/backend interaction
+- 🌐 Clean separation between backend (Flask + Kobold API) and frontend (HTML/CSS/JS)
 
 ---
 
 ## 📦 How it works
 
-- You run your **own model** locally with [KoboldCpp](https://github.com/LostRuins/koboldcpp)  
-- The backend (`app.py`) connects to it and forwards your input  
-- Streaming tokens are parsed and sent instantly to the frontend  
+- You run your **own model** locally with [KoboldCpp](https://github.com/LostRuins/koboldcpp)
+- The backend (`app.py`) connects to it and forwards your input
+- Streaming tokens are parsed and sent instantly to the frontend
 
 ---
 
@@ -40,12 +42,12 @@ Visit the project landing page hosted on GitHub Pages:
 
 Here's what we're working on next:
 
-- 🔍 **Search the web** from within chat (`Search on Web` button)  
-- 📎 **Attach documents**: Feed `.txt`, `.pdf`, `.docx`, etc. to the model  
-- 🧠 **Context-aware uploads**: AI will read and reference attached files in conversation  
-- 💾 **Save/load chat sessions** to local storage  
-- 🌐 **Multi-language interface support**  
-- 🗂️ **Prompt templates** and personalities (creative, assistant, coder, etc.)  
+- 🔍 **Search the web** from within chat (`Search on Web` button)
+- 📎 **Attach documents**: Feed `.txt`, `.pdf`, `.docx`, etc. to the model
+- 🧠 **Context-aware uploads**: AI will read and reference attached files in conversation
+- 💾 **Save/load chat sessions** to local storage
+- 🌐 **Multi-language interface support**
+- 🗂️ **Prompt templates** and personalities (creative, assistant, coder, etc.)
 
 ---
 
@@ -53,18 +55,18 @@ Here's what we're working on next:
 
 KovalskyAI uses:
 
-- **Backend**: Python `Flask`, `requests`, and a KoboldCpp-compatible API  
+- **Backend**: Python `Flask`, `requests`, and a KoboldCpp-compatible API
 - **Frontend**: Pure `HTML`, `CSS`, `JavaScript` + `GSAP` for animations
 
 ### ⚙️ Model & Backend Setup
 1. 📥 **Download KoboldCpp**
 Download the latest `KoboldCpp` build from [Releases](https://github.com/LostRuins/koboldcpp/releases)
-Use the version with `cu12` in the name if you have an `NVIDIA GPU with CUDA 12`.  
+Use the version with `cu12` in the name if you have an `NVIDIA GPU with CUDA 12`.
 
 2. 🤖 **Download the Model**
 Get the model file `qwen1_5-7b-chat-q4_k_m.gguf` from Hugging Face.
 Choose `q4_k_m` format for a good balance of performance and quality.
-_Place the `.gguf` model file in the same folder as `koboldcpp_cu12.exe.`_  
+_Place the `.gguf` model file in the same folder as `koboldcpp_cu12.exe.`_
 
 
 3. 🚀 **Launch KoboldCpp**
@@ -111,7 +113,7 @@ python app.py
 http://localhost:5001/v1/chat/completions
 
 ✅ **Frontend will be available at:**
-http://localhost:8000  
+http://localhost:8000
 
 
 # 🤝Contributing
@@ -123,7 +125,11 @@ http://localhost:8000
 
 2. Fork the repo
 
-3. Open a pull request when ready  
+3. Open a pull request when ready
 
 `Made with ❤️ and local compute.`
 
+## License
+
+This project is licensed under the [MIT License](./LICENSE.txt).
+See the LICENSE file for full details.
