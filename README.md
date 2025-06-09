@@ -4,6 +4,13 @@ KovalskyAI is a **fully self-hosted**, blazing-fast AI chat interface built for 
 No external APIs. No cloud. No monthly fees.  
 Just you and your model — on your own terms.
 
+## 🌐 Project Landing Page
+
+Visit the project landing page hosted on GitHub Pages:
+
+🔗 [https://maxadov.github.io/KovalskyAI/](https://maxadov.github.io/KovalskyAI/)
+
+
 ---
 
 ![Demo](https://i.imgur.com/HECHphb.gif)
