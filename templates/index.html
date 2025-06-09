@@ -20,6 +20,11 @@
             position: relative;
         }
 
+        body.light-theme {
+            background: #ffffff;
+            color: #222222;
+        }
+
         .chat-container {
             height: 100vh;
             display: flex;
@@ -27,6 +32,10 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 0 20px;
+        }
+
+        body.light-theme .chat-container {
+            background: #ffffff;
         }
 
         .header {
@@ -41,11 +50,19 @@
             backdrop-filter: blur(10px);
         }
 
+        body.light-theme .header {
+            background: rgba(255, 255, 255, 0.7);
+        }
+
         .brand {
             font-size: 18px;
             font-weight: 500;
             letter-spacing: 0.5px;
             color: #ffffff;
+        }
+
+        body.light-theme .brand {
+            color: #222222;
         }
 
         .header-controls {
@@ -66,10 +83,19 @@
             justify-content: center;
         }
 
+        body.light-theme .header-button {
+            color: #444;
+        }
+
         .header-button:hover {
             color: #ffffff;
             background: rgba(255, 255, 255, 0.1);
             transform: scale(0.95);
+        }
+
+        body.light-theme .header-button:hover {
+            color: #000;
+            background: rgba(0,0,0,0.07);
         }
 
         .header-button:active {
@@ -99,6 +125,14 @@
 
         .chat-area::-webkit-scrollbar-thumb:hover {
             background: #444;
+        }
+
+        body.light-theme .chat-area::-webkit-scrollbar-thumb {
+            background: #ddd;
+        }
+
+        body.light-theme .chat-area::-webkit-scrollbar-thumb:hover {
+            background: #ccc;
         }
 
         .message {
@@ -136,8 +170,16 @@
             color: #ffffff;
         }
 
+        body.light-theme .message.user .message-content {
+            color: #222222;
+        }
+
         .message.ai .message-content {
             color: #e0e0e0;
+        }
+
+        body.light-theme .message.ai .message-content {
+            color: #444444;
         }
 
         .copy-button {
@@ -166,6 +208,11 @@
         .copy-button:hover {
             color: #aaa;
             background: rgba(255, 255, 255, 0.05);
+        }
+
+        body.light-theme .copy-button:hover {
+            color: #222;
+            background: rgba(0,0,0,0.05);
         }
 
         .copy-button:active {
@@ -217,6 +264,12 @@
             align-items: center;
             gap: 12px;
             box-shadow: 0 0 30px rgba(255, 255, 255, 0.07);
+        }
+
+        body.light-theme .input-wrapper {
+            background: rgba(240,240,240,0.8);
+            border: 1px solid #ddd;
+            box-shadow: 0 0 30px rgba(0,0,0,0.07);
         }
 
         .input-wrapper::after {
@@ -285,8 +338,16 @@
             font-family: inherit;
         }
 
+        body.light-theme .message-input {
+            color: #222222;
+        }
+
         .message-input::placeholder {
             color: #666;
+        }
+
+        body.light-theme .message-input::placeholder {
+            color: #aaa;
         }
 
         .message-input:disabled {
@@ -332,6 +393,10 @@
             fill: #000;
         }
 
+        body.light-theme .send-icon {
+            fill: #fff;
+        }
+
         .error-message {
             color: #ff6b6b;
             font-size: 14px;
@@ -356,14 +421,32 @@
             color: #22c55e;
         }
 
+        body.light-theme .status-indicator.success {
+            background: rgba(34, 197, 94, 0.08);
+            border: 1px solid #22c55e;
+            color: #22c55e;
+        }
+
         .status-indicator.error {
             background: rgba(239, 68, 68, 0.2);
             border: 1px solid #ef4444;
             color: #ef4444;
         }
 
+        body.light-theme .status-indicator.error {
+            background: rgba(239, 68, 68, 0.08);
+            border: 1px solid #ef4444;
+            color: #ef4444;
+        }
+
         .status-indicator.processing {
             background: rgba(59, 130, 246, 0.2);
+            border: 1px solid #3b82f6;
+            color: #3b82f6;
+        }
+
+        body.light-theme .status-indicator.processing {
+            background: rgba(59, 130, 246, 0.08);
             border: 1px solid #3b82f6;
             color: #3b82f6;
         }
@@ -403,6 +486,12 @@
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M3 6h18"></path>
                         <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                    </svg>
+                </button>
+                <button class="header-button" id="themeToggleButton" title="Toggle Theme">
+                    <svg id="themeToggleIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
                     </svg>
                 </button>
             </div>
@@ -455,6 +544,8 @@
                 this.searchButton = document.getElementById('searchButton');
                 this.settingsButton = document.getElementById('settingsButton');
                 this.clearButton = document.getElementById('clearButton');
+                this.themeToggleButton = document.getElementById('themeToggleButton');
+                this.themeToggleIcon = document.getElementById('themeToggleIcon');
                 this.isProcessing = false;
                 this.currentAIMessage = null;
                 
@@ -530,6 +621,10 @@
                 this.clearButton.addEventListener('click', () => {
                     console.log('Clear button clicked');
                     this.clearChat();
+                });
+
+                this.themeToggleButton.addEventListener('click', () => {
+                    this.toggleTheme();
                 });
             }
 
@@ -750,6 +845,16 @@
                         `;
                     }, 2000);
                 });
+            }
+
+            toggleTheme() {
+                const body = document.body;
+                const isLight = body.classList.toggle('light-theme');
+                // Change icon: sun for light, moon for dark
+                this.themeToggleIcon.innerHTML = isLight
+                    ? `<circle cx="12" cy="12" r="5"></circle>
+                       <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>`
+                    : `<path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"></path>`;
             }
         }
 
