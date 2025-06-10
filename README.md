@@ -103,6 +103,15 @@ Install dependencies
 pip install -r requirements.txt
 ```
 
+
+Create and setup your `.env` configuration at the root folder
+```bash
+KOBOLD_API_URL=http://localhost:5001/v1/chat/completions
+SYSTEM_PROMPT=You are a smart, concise assistant. Never say more than needed. Answer clearly and directly, like a human who values brevity. Avoid fluff and unnecessary details.
+FLASK_SECRET_KEY=YOUR_DIFFICULT_KEY
+FLASK_PORT=8000
+```
+
 Start the server
 ```bash
 python app.py
