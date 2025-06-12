@@ -40,12 +40,11 @@ Visit the project landing page hosted on GitHub Pages:
 
 Here's what we're working on next:
 
-- 🔍 **Search the web** from within chat (`Search on Web` button)  
-- 📎 **Attach documents**: Feed `.txt`, `.pdf`, `.docx`, etc. to the model  
-- 🧠 **Context-aware uploads**: AI will read and reference attached files in conversation  
-- 💾 **Save/load chat sessions** to local storage  
-- 🌐 **Multi-language interface support**  
-- 🗂️ **Prompt templates** and personalities (creative, assistant, coder, etc.)  
+- [ ] **Text-to-Speech (TTS)**: The model can speak responses aloud using voice synthesis
+- [ ] **Search the web** from within chat (`Search on Web` button)  
+- [ ] **Attach documents**: Feed `.txt`, `.pdf`, `.docx`, etc. to the model   
+- [ ] **Save/load chat sessions** to local storage  
+- [ ] **Multi-language interface support**    
 
 ---
 
